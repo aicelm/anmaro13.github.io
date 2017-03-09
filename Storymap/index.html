@@ -86,7 +86,7 @@
 			.nav-bar .nav>.entry .entryLbl,
 			.nav-bar .dropdown-toggle {
 			    color: #FFFFFF;
-			    background-color: #004f00;
+			    background-color: #004f00 !important;
 			}
 
 			.nav-bar.isBullet .nav-tabs>li>a,
@@ -220,6 +220,10 @@
 
 		<!-- Loading -->
 		<style>
+			.nav-bar.isTab, .nav-bar.isBullet {
+				height: 40px;
+				background-color: rgb(0,157,0);
+			}
 			#loadingOverlay {
 				position: absolute;
 				top: 0;
