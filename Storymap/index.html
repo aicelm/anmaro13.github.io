@@ -75,7 +75,22 @@
 	</head>
 	<body class="claro">
 		<style>
-			/* CUSTOM CSS RULES */
+			/*números índice desactivados*/
+			.nav-bar .nav > .entry .entryLbl, .nav-bar 
+			.dropdown-toggle{
+				background-color:#004f00;
+				color:#FFFFFF;
+			}
+			/*números índice activo*/
+			.nav-bar .entry.active>.entryLbl, .nav-bar .dropdown.active .dropdown-toggle{
+				background-color: #009d00 !important;
+				color:#FFFFFF;
+			}
+			/*cabecera verde oscura*/
+			#headerDesktop{
+				background-color: #004f00;
+			}
+			
 
 		</style>
 
@@ -239,26 +254,12 @@
 				left: 50%;
 				z-index: 1101;
 			} 
-			/*números índice desactivados*/
-			.nav-bar .nav > .entry .entryLbl, .nav-bar 
-			.dropdown-toggle{
-				background-color:#004f00;
-				color:#FFFFFF;
-			}
-			/*números índice activo*/
-			.nav-bar .entry.active>.entryLbl, .nav-bar .dropdown.active .dropdown-toggle{
-				background-color: #009d00 !important;
-				color:#FFFFFF;
-			}
+			
 			.nav-bar .entry.active > .entryLbl, .nav-bar .dropdown.active .dropdown-toggle{
 				background-color: #a8eca5 !important;
 				color: #000000;
 			}
 			
-			/*cabecera verde oscura*/
-			#headerDesktop{
-				background-color: #004f00;
-			}
 			
 			/*barra scroll verde*/
 			.descLegendPanel::-webkit-scrollbar-thumb{
