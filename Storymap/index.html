@@ -75,10 +75,15 @@
 	</head>
 	<body class="claro">
 		<style>
-			/*números índice desactivados*/
+			/*cabecera verde oscura*/
+			#headerPrinci{
+				background-color: #004f00 !important;
+			}
+			
+			/*números índice desactivados "mainViewAboveMap*/
 			.nav-bar .nav > .entry .entryLbl, .nav-bar 
 			.dropdown-toggle{
-				background-color:#004f00;
+				background-color:#004f00 !important;
 				color:#FFFFFF;
 			}
 			/*números índice activo*/
@@ -86,17 +91,15 @@
 				background-color: #009d00 !important;
 				color:#FFFFFF;
 			}
-			/*cabecera verde oscura*/
-			#headerDesktop{
-				background-color: #004f00;
+			#mainViewAboveMap{
+				background-color:#004f00 !important;
+				color:#FFFFFF;
 			}
-			
-
 		</style>
 
 		<!-- Builder top panel is injected here -->
 		<div id="builderPanel" class="hide mainViewAboveMap"></div>
-
+			
 		<!-- Header -->
 		<div id="header" class="mainViewAboveMap">
 			<!-- Mobile header -->
@@ -113,7 +116,7 @@
 				<div class="menu"></div>
 			</div>
 			<!-- Desktop header -->
-			<div id="headerDesktop" aria-hidden="true">
+			<div id="headerPrinci" aria-hidden="true">
 				<div class="rightArea">
 					<div class="linkSocialContainer">
 						<span class="error-status">
