@@ -162,8 +162,7 @@
 							<div class="medias"></div>
 							<!-- Loading -->
 							<div id="mainStageLoadingIndicator" class="loadingIndicator">
-								<iframe src="//giphy.com/embed/DT1tkVhGWaEU0?html5=true" width="480" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
-									<p><a href="https://giphy.com/gifs/loading-icon-DT1tkVhGWaEU0">via GIPHY</a></p>
+								
 							</div>
 							<!-- Mobile info button -->
 							<div id="mobileInfoBtn" class="mobileInfoBtn"></div>
@@ -234,63 +233,44 @@
 				animation-fill-mode:forwards;
 			}
 
-/* 			#loadingIndicator {
+ 			#loadingIndicator {
 				position: fixed;
 				top: 50%;
 				left: 50%;
 				z-index: 1101;
-			} */
-			/*barra debajo del título*/
-			.nav-bar.isTab, .nav-bar.isBullet {
-				height: 40px;
-				background-color: rgba(255,255, 255,0.9);
-			}
-			/*números indicadores de cada mapa, color claro cuando se seleciona*/
-			.nav-bar .entry.active>.entryLbl,
-			.nav-bar .dropdown.active .dropdown-toggle {
-			    background-color: #009d00 !important;
-			    color: #FFFFFF;
-			}
-			/*números indicadores de cada mapa, color oscuro sin seleccionar*/
+			} 
+			/*números índice desactivados*/
 			.nav-bar .nav > .entry .entryLbl, .nav-bar 
-			.dropdown-toggle {
-			   background-color: #004f00;
-			   color: #FFFFFF;
+			.dropdown-toggle{
+				background-color:#004f00;
+				color:#FFFFFF;
+			}
+			/*números índice activo*/
+			.nav-bar .entry.active>.entryLbl, .nav-bar .dropdown.active .dropdown-toggle{
+				background-color: #009d00 !important;
+				color:#FFFFFF;
+			}
+			.nav-bar .entry.active > .entryLbl, .nav-bar .dropdown.active .dropdown-toggle{
+				background-color: #a8eca5 !important;
+				color: #000000;
 			}
 			
-			/*Texto del los números*/
-			.nav-bar.isBullet .nav-tabs>,
-			.nav-bar.isBullet .dropdown-toggle {
-			    font-family: 'Lato', sans-serif;
+			/*cabecera verde oscura*/
+			#headerDesktop{
+				background-color: #004f00;
 			}
 			
-			/*Texto del título*/
-			#header .title{
-			    font-family: 'Lato', sans-serif
+			/*barra scroll verde*/
+			.descLegendPanel::-webkit-scrollbar-thumb{
+				background-color: #006100 !important;
 			}
 			
-			/*Color y fuente del cuadro de texto*/
-			.backdrop {
-			    background-color: #FFFFFF;
-			    font-family: 'Lato', sans-serif
+			/*verde claro números índice*/
+			.nav-bar -dropdown:not(.active):hover .dropdown-toogle .nav-bar li:not(.active) .entryLbl:hover{
+				background-color: #a8eca5 !important;
+				color: #000000;
 			}
 			
-			/*Widget posición en el mapa*/
-			.overviewContainer{
-				border-top-left-radius: 0;
-				border-top-right-radius: 0;
-			}		
-			.overviewContainer .mapControls .collapsed{
-				background-color: #FFFFFF;
-			}
-			.titleBtn{
-				color: #004f00;
-			}
-			.collapseBtn{
-				color: #004f00;
-			}
-			
-				
 		</style>
 
 		<div id="loadingOverlay"></div>
